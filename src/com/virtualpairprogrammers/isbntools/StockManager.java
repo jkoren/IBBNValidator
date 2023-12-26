@@ -1,6 +1,7 @@
 package com.virtualpairprogrammers.isbntools;
 
 public class StockManager {
+    private ExternalISBNDataService databaseService;
     private ExternalISBNDataService webService;
 
     public void setDatabaseService(ExternalISBNDataService databaseService) {
@@ -11,13 +12,6 @@ public class StockManager {
         this.webService = webService;
     }
 
-
-    private ExternalISBNDataService databaseService;
-
-
-//    public void setService(ExternalISBNDataService service) {
-//        this.service = service;
-//    }
 
     public String getLocatorCode(String isbn) {
         Book book = databaseService.lookup(isbn);

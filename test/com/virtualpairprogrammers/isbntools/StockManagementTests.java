@@ -2,6 +2,7 @@ package com.virtualpairprogrammers.isbntools;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
 
 public class StockManagementTests {
     @Test
@@ -32,4 +33,13 @@ public class StockManagementTests {
 
 
     }
+
+//    @Test
+//    public void databaseIsUsedIfDataIsPresent() {
+//        fail();
+//    }
+//    @Test
+//    public void webserviceIsUsedIfDataIsNotPresentInDatabase() {
+//        fail();
+//    }
 }
